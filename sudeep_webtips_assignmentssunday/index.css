@@ -1,0 +1,314 @@
+body {
+  background-image: url("HTML & CSS/General Images & Icons/background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.top-container {
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 1%;
+}
+.left-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 100px);
+  padding: 1.5%;
+}
+#city-logo {
+  background-repeat: no-repeat;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+#inputdata {
+  background-color: var(--bg-input-box);
+  color: var(--primary-white);
+  font-size: 1.5rem;
+  height: 4rem;
+  text-align: center;
+  width: 9rem;
+}
+.tempc {
+  border-right: 2px dotted var(--primary-white);
+}
+#top-tempc {
+  font-weight: bold;
+  margin-top: 15%;
+}
+#top-humidity {
+  font-weight: bold;
+  margin-top: 11%;
+}
+#top-far {
+  font-weight: bold;
+  margin-top: 15%;
+}
+#top-precipitation {
+  font-weight: bold;
+  margin-top: 11%;
+}
+.date-time {
+  color: var(--primary-white);
+  text-align: start;
+}
+#top-time {
+  color: var(--bright-yellow-text);
+  font-size: 1.5em;
+}
+#time-color {
+  color: var(--bright-yellow-text);
+}
+#top-date {
+  margin-top: 5%;
+}
+.tempf {
+  border-right: 2px dotted var(--primary-white);
+}
+.top-inner-text {
+  font-size: 30px;
+  text-align: center;
+  color: var(--primary-white);
+}
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 40px 40px 40px 40px;
+  padding: 5%;
+}
+
+.right-item {
+  color: var(--primary-white);
+  text-align: center;
+}
+.border-right-1 {
+  border-right: 1px solid var(--primary-white);
+}
+.middle-container {
+  background-color: black;
+  border-radius: 15px 15px 0 0;
+  color: var(--primary-white);
+  font-family: "Poppins", sans-serif;
+  padding: 1%;
+  max-width: 100%;
+  min-height: 300px;
+  position: relative;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+#middle-line {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+.middle-text {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+#middle-text-1 {
+  align-items: center;
+  column-gap: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.middle-block {
+  column-gap: 40px;
+  display: flex;
+  grid-auto-flow: column;
+  /* margin-left: 13%; */
+  margin-left: 3%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 87vw;
+}
+#curser-left{
+  position: absolute;
+  top: 50%;
+  font-size: x-large;
+  border-radius: 50%;
+  padding: 10px;
+  /* left:2%; */
+  /* margin: 1%; */
+  cursor: pointer;
+  opacity: 0.4;
+}
+#curser-right{
+  position: absolute;
+    top: 45%;
+    font-size: x-large;
+    border-radius: 50%;
+    padding: 10px;
+    right:4.5%;
+    margin: 1%;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.middle-block::-webkit-scrollbar {
+  display: none;
+}
+.middle-item {
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  /* background-image: url("HTML & CSS/Icons for cities/newyork.svg"); */
+  background-size: auto;
+  height: 200px;
+  justify-content: center;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  width: 200px;
+}
+.middle-img {
+  position: absolute;
+  right: 0px;
+  top: 5%;
+}
+.mid:hover {
+  transform: scale(1.08);
+}
+.mid{
+  background-color: var(--primary-black);
+  background-image: url("HTML & CSS/Icons for cities/newyork.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 170px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 30px);
+  height: 280px;
+  min-width: 200px;
+  padding: 1%;
+  width: 20%;
+}
+.mid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  text-align: left;
+}
+.mid-img {
+  text-align: end;
+}
+
+.bottom-container {
+  background-color: var(--primary-black);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 2%;
+}
+#bottom-text {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  padding: 1%;
+}
+#bottom-text-1 {
+  align-items: center;
+  column-gap: 30px;
+  display: flex;
+  font-size: 1.5rem;
+}
+.btm-temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.bottom-grid {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  display: grid;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 1%;
+}
+.grid-text {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+.grid-item {
+  background-color: var(--bg-grey-tile);
+}
+.country-names {
+  color: var(--bright-yellow-text);
+}
+.grid-item:hover {
+  background-color: #535252;
+  transform: scale(1.05);
+}
+#continent{
+  cursor: pointer;
+}
+#bottom-temp{
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .bottom-grid {
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: space-between;
+    margin-top: 25px;
+    transition: all.2s ease-in-out;
+  }
+  #bottom-text {
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    padding: 1%;
+  }
+  #bottom-text-1 {
+    align-items: center;
+    column-gap: 30px;
+    display: flex;
+    font-size: 0.75rem;
+  }
+  .btm-temp {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .middle-block {
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: stretch;
+    row-gap: 40px;
+    transition: all.2s ease-in-out;
+  }
+  .middle-text {
+    font-size: 25px;
+  }
+  .mid {
+    width: 100%;
+  }
+  .top-container {
+    background-image: url("HTML & CSS/General Images & Icons/background.svg");
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #dropdown {
+    font-size: 1rem;
+  }
+  #city-logo {
+    height: 75px;
+    width: 75px;
+  }
+  .top-inner-text {
+    font-size: 1rem;
+  }
+}
